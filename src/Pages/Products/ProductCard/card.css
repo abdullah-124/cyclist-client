@@ -1,0 +1,15 @@
+
+h3,h5,p{
+    margin: 0;
+    padding: 0;
+}
+
+.product-card{
+    padding: 10px 20px;
+    margin: 0 auto;
+    align-items: center;
+    box-shadow: 3px 4px 10px #ccc;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.589);
+    backdrop-filter: blur(10px)
+}

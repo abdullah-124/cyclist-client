@@ -1,0 +1,28 @@
+.banner-container {
+  background-color: #ffffff;
+  background-image: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffffff 24%,
+    #f1e3f1 49%,
+    #e0c3fc 75%,
+    #8ec5fc 100%
+  );
+  
+  /* width: 100vw; */
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* .banner{
+  background: url(./bg.png);
+  background-size: cover
+} */
+.banner h1{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #251E21;
+}
+

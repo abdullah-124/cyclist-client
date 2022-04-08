@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  display: block;
+  background-color: #f3d1f3;
+  background-image: linear-gradient(60deg, #ffeaff 0%, #dffbff 100%);
+ 
 }
 
 .App-logo {
@@ -13,15 +17,75 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* custom css  */
+body {
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+/* btn */
+.btn-main {
+  background-image: linear-gradient(
+    to right,
+    #dd5e89 0%,
+    #f7bb97 51%,
+    #dd5e89 100%
+  );
+  margin: 2px;
+  padding: 10px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
   color: white;
+  box-shadow: 0 0 20px #eee;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn-main:hover {
+  background-position: right center;
+  color: #fff;
+}
+.btn-regular {
+  padding: 8px 12px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+.btn-regular::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.btn-regular:hover {
+  color: #e8e8e8;
+}
+
+.btn-regular:hover::before {
+  width: 100%;
 }
 
 .App-link {

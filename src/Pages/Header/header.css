@@ -1,0 +1,27 @@
+.header{
+    background-image: linear-gradient(to top, #e6e9f0e0 0%, #eef1f5da 100%);
+    backdrop-filter: blur(5px)
+}
+.nav-logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.header a{
+    text-decoration: none;
+    color: #333;
+    margin: 3px 6px;
+    font-weight: bold;
+    padding: 5px 12px;
+    transition: all .1s;
+}
+.header a:hover{
+    color: #dd5e89;
+    /* transform: scale(1.1); */
+    transition: all .4s;
+}
+.header .user-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
