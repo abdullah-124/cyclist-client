@@ -14,8 +14,8 @@ const Reviews = () => {
       <h4 className="text-center mt-4 fw-bold">
         <span className="text-primary">Happy</span> Client
       </h4>
-      <div className="feature mx-auto">
-        {reviwes.slice(0, 6).map((review) => (
+      <div className="review mx-auto">
+        {reviwes.map((review) => (
           <ReviewCard key={review._id} review={review} />
         ))}
         <br />

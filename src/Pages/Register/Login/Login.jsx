@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import '../register.css'
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../SocialLogin/SocialLogin"
+import Header from '../../Header/Header'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {  faSignIn } from "@fortawesome/free-solid-svg-icons"
 import useAuth from "../../../Hooks/useAuth"
@@ -10,6 +11,8 @@ const Login = () => {
   const [loginData, setLoginData] = useState({})
   const {user, massage, loginUser} = useAuth()
   const navigate = useNavigate()
+  const location = useLocation()
+  console.log(window.history)
 
 
   if(user){
@@ -32,6 +35,7 @@ const Login = () => {
 
   }
   return (
+    <>
     <div className="box container-fluid ">
       <div className="row p-5">
 
@@ -58,6 +62,7 @@ const Login = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

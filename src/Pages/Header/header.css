@@ -1,7 +1,10 @@
 .header{
     background-image: linear-gradient(to top, #e6e9f0e0 0%, #eef1f5da 100%);
-    backdrop-filter: blur(5px)
+    backdrop-filter: blur(5px);
+    padding: 0px;
 }
+
+
 .nav-logo{
     font-size: 24px;
     font-weight: bold;

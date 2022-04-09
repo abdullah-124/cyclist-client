@@ -17,6 +17,7 @@ const MakeAdmin = () => {
   };
   return (
     <div className="p-5 rounded-3 shadow-lg col-lg-7 mt-5 mx-auto col-12">
+        <h5 className="my-3">Make an admin</h5>
       <form onSubmit={makeAdmin}>
         <div>
           <Form.Control ref={name} type="email" placeholder="Enter email" />

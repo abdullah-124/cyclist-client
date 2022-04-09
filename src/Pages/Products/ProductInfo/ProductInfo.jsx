@@ -54,14 +54,14 @@ const ProductInfo = () => {
           <FontAwesomeIcon icon={faBackward} />
         </button>
       </Link>
-      <div className=" container align-items-center d-flex h-100">
+      <div className=" container align-items-center d-flex pb-5">
         <div className="row row-cols-1 align-items-center row-cols-lg-2">
           <div className="col">
             <img className="img-fluid" src={image} alt="" />
           </div>
-          <div className="col">
+          <div className="col pt-4">
             <h1 className="text-primary text-left">{name}</h1>
-            <h3 className="text-success">Price: ${price}</h3>
+            <h3 className="text-muted fw-bold">Price: ${price}</h3>
             <p className="fs-5 mt-3">{desc}</p>
 
             <button onClick={addToCart} className="btn-regular mt-2">

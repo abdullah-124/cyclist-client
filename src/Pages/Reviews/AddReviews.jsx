@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import ReactStars from "react-rating-stars-component";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./reviews.css";
+import './reviews.css'
 import { faPenAlt } from "@fortawesome/free-solid-svg-icons";
 import useAuth from "../../Hooks/useAuth"
 
@@ -34,8 +34,8 @@ const AddReview = () => {
 
   return (
     <div className="row row-cols-1 row-cols-lg-2 mt-5 mx-auto">
-      <div className="mx-auto">
-        <form className="review shadow-lg" onSubmit={handleReview}>
+      <div className="mx-auto col">
+        <form className="add-review shadow-lg" onSubmit={handleReview}>
           <h4>Add Review</h4>
           <textarea
             placeholder="Type Review"

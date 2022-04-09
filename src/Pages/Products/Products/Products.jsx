@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../../Header/Header'
 import Loader from '../../Shared/Loader/Loader'
 import ProductCard from '../ProductCard/ProductCard'
 
@@ -15,8 +14,7 @@ const Products = ({slice}) => {
         
     return products.length === 0 ? <Loader /> : (
         <>
-        <Header />
-        <div className='mt-1 '>
+        <div className='mt-3 '>
             <div className='text-center mb-4'>
                 <h2 className='m-0 text-primary'>Product</h2>
                 <p className='m-0 text-muted'>We Sold</p>

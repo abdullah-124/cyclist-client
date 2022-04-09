@@ -15,23 +15,30 @@ import MakeAdmin from "./Pages/Admin/MakeAdmin/MakeAdmin";
 import AdminRoute from "./Pages/Admin/AdminRoute/AdminRoute";
 import AuthProvider from "./Hooks/AuthProvider/AuthProvider";
 import ManageProduct from "./Pages/Admin/ManageProducts/ManageProduct"
+import Header from "./Pages/Header/Header"
+import NotFound from "./Pages/Shared/NotFound/NotFound"
+import CheackOut from "./Pages/Dashboard/CheackOut/CheackOut"
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <BrowserRouter>
+        <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:id" element={<ProductInfo />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/*" element={<NotFound />} />
 
             <Route path="/" element={<PrivateRoute />}>
               <Route path="dashboard/" element={<Dashboard />}>
                 <Route path="" element={<MyOrder />} />
+                <Route path="cheackOut" element={<CheackOut />} />
                 <Route path="review" element={<AddReview />} />
+                <Route path="*" element={<NotFound />} />
               </Route>
               <Route path="dashboard/*" element={<Dashboard />}>
                 <Route path="admin/*" element={<AdminRoute />}>
@@ -39,6 +46,7 @@ function App() {
                   <Route path="manageProduct" element={<ManageProduct />} />
                   <Route path="addProduct" element={<AddProduct />} />
                   <Route path="makeAdmin" element={<MakeAdmin />} />
+                  <Route path="*" element={<NotFound />} />
                 </Route>
               </Route>
             </Route>

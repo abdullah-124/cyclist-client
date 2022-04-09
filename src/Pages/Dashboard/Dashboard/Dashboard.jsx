@@ -1,7 +1,6 @@
 import React from "react";
 import DashboardMain from "../DashboardMain/DashboardMain";
 import '../dashboard.css'
-import DashNav from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 
 const Dashboard = () => {
@@ -14,10 +13,7 @@ const Dashboard = () => {
              <Sidebar/>
            </div>
            <div className="col-10">
-             <div className="row dash-nav">
-               <DashNav/>
-             </div>
-             <div className="row">
+              <div className="row mx-auto">
                <DashboardMain/>
              </div>
            </div>

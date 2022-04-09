@@ -6,7 +6,7 @@ import { faWrench } from "@fortawesome/free-solid-svg-icons"
 import ManageTable from "./ManageTable"
 
 const ManageOrder = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]); 
   useEffect(() => {
     fetch("https://pacific-ridge-36287.herokuapp.com/manageOrder")
       .then((res) => res.json())

@@ -1,34 +1,21 @@
 .dashboard-container{
     background: url('./Sidebar/6068326.jpg');
+    height: 90vh;
     background-position: center;
     background-size: cover;
     backdrop-filter: blur(10px)
 }
 .dashboard{
     /* background-color: rgba(210, 217, 238, 0.568); */
-    backdrop-filter: blur(3px)
+    backdrop-filter: blur(3px);
 }
-/* navbar */
-.dash-nav{
-    height: 60px;
-    box-shadow: 0px 2px 20px #cccc;
-}
-.nav a{
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 8px;
-}
-.nav a:hover{
-    color: #dd5e89;
-    transition: .4s;
-}
+
 /* sidebar css */
 .sidebar{
     padding: 5px;
     padding-top: 20px;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     border-right: 2px solid #000;
     color: #333;
     backdrop-filter: blur(10px);

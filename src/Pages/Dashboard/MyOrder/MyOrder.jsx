@@ -1,7 +1,8 @@
-import { faBatteryEmpty, faTachometer, faTrashAlt } from "@fortawesome/free-solid-svg-icons"
+import { faBank, faBatteryEmpty, faTachometer, faTrashAlt } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React, { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
+import { Link } from "react-router-dom"
 import useAuth from "../../../Hooks/useAuth"
 import deleteOrder from "../../Shared/handleDelete/handleDelete"
 
@@ -43,9 +44,11 @@ const MyOrder = () => {
               <td>{product.status}</td>
               <td className="text-center"><FontAwesomeIcon  onClick={()=>deleteOrder(product._id)} icon={faTrashAlt} /></td>
             </tr>
+
           ))}
         </tbody>
       </Table>
+      <Link to="/dashboard/cheackOut"><button className="btn-regular"><FontAwesomeIcon icon={faBank} /> Cheack Out</button></Link>
     </>
   );
 };

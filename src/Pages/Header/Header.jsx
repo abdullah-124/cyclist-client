@@ -10,8 +10,8 @@ const Header = () => {
   const { user, logout } = useAuth();
   return (
     <>
-      <div  className="">
-        <Navbar className="header" fixed="top" expand="lg">
+      <div  className="p-2">
+        <Navbar className="header p-2" fixed="top"  expand="lg">
           <Container fluid>
             <Navbar.Brand className="nav-logo">Cyclist
             
@@ -71,7 +71,6 @@ const Header = () => {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-        <br />
         <br />
         <br />
         

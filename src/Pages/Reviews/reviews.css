@@ -1,8 +1,8 @@
-.review{
+.add-review{
     padding: 20px ;
     border-radius: 12px;
 }
-.review textarea, .rate {
+.add-review textarea, .rate {
     border: 1px solid #cccc;
     padding: 5px;
     border-radius: 8px;
