@@ -26,11 +26,12 @@ const Footer = () => {
             <div className="mt-4">
                 
                 <h6>Important Link</h6>
-                <Link className="text-light" to="/home">Home</Link>
+                <Link className="text-light me-2" to="/home">Home</Link>
                 <Link className="text-light" to="/products">Products</Link>
             </div>
           </div>
         </div>
+       
       </div>
     </footer>
   );
