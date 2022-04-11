@@ -6,7 +6,7 @@ import deleteOrder from "../../Shared/handleDelete/handleDelete"
 const ManageTable = ({ product, index }) => {
     const handleStatus = (e) =>{
         // product.status = e.target.value;
-        const url = `https://pacific-ridge-36287.herokuapp.com/status/${e.target.value}/${product._id}`
+        const url = `http://localhost:4000/status/${e.target.value}/${product._id}`
         fetch(url,{
           method: "PUT",
         })

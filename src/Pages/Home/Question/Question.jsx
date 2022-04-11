@@ -6,7 +6,7 @@ const Question = () => {
   return (
     <>
       <div className="container my-5">
-          <h3 className="text-center">Have Any <span className="text-primary">Question</span></h3>
+          <h3 className="text-center my-5">Have Any <span className="text-primary">Question</span></h3>
         <div className="row row-cols-1 row-cols-lg-2 align-items-center">
             <div className="col">
                 <img className="img-fluid" src={qustImg} alt="" />

@@ -1,12 +1,12 @@
 .short-summary{
-    transform: translateY(-80px)
+    margin: 60px 0;
 }
 .icon{
     font-size: 40px;
-    color: #dd5e89;
+    color: #333;
 }
 .short-summary .card{
-    background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgba(225, 200, 239, 0.733) 21.4%, rgba(163, 225, 233, 0.747) 57.1% );
+    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );
     border: none;
     color: #000;
     backdrop-filter: blur(1px);

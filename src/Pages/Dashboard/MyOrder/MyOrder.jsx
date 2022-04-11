@@ -13,7 +13,7 @@ const MyOrder = () => {
   useEffect(() => {
     const loadeData = (email) => {
       if (user.email === email) {
-        fetch(`https://pacific-ridge-36287.herokuapp.com/myOrder/${email}`)
+        fetch(`http://localhost:4000/myOrder/${email}`)
           .then((res) => res.json())
           .then((data) => setMyOrders(data));
       } else {

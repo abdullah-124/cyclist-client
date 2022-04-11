@@ -5,14 +5,14 @@ import ReviewCard from "./ReviewCard";
 const Reviews = () => {
   const [reviwes, setreviwes] = useState([]);
   useEffect(() => {
-    fetch("https://pacific-ridge-36287.herokuapp.com/review")
+    fetch("http://localhost:4000/review")
       .then((res) => res.json())
       .then((data) => setreviwes(data));
   }, []);
   return (
     <div>
-      <h4 className="text-center mt-4 fw-bold">
-        <span className="text-primary">Happy</span> Client
+      <h4 className="text-center my-5 fw-bold">
+        <span className="text-primary fw-bold py-5">Happy</span> Client
       </h4>
       <div className="review mx-auto">
         {reviwes.map((review) => (
