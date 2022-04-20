@@ -28,6 +28,6 @@ A bicycle related niche website.
 * Firebase
 
 ## Link
-[Server](https://choosealicense.com/licenses/mit/)
+[Server](https://github.com/abdullah-124/cyclist-s)
 [LiveSite](https://bicycle-12.web.app/).
 
