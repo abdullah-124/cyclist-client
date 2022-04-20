@@ -11,7 +11,7 @@ const ProductModal = ({ show, handleClose, product }) => {
   const navigate = useNavigate();
   const { user } = useAuth();
 
-  const handleOrder = () => {
+  const addToCart = () => {
     order.email = user?.email;
     order.coustomer = user?.displayName;
     order.name = product.name;
@@ -35,11 +35,7 @@ const ProductModal = ({ show, handleClose, product }) => {
       navigate("/login");
     }
   };
-  const addToCart = () => {
-    if (user.email) {
-      handleOrder();
-    }
-  };
+  
   return (
     <>
       <Modal show={show} onHide={handleClose}>
