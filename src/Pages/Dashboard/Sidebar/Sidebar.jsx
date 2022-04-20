@@ -17,8 +17,8 @@ const Sidebar = () => {
   const { user, logout, admin } = useAuth();
   // console.log(admin);
   let logo = "";
-  if (user.displayName) {
-    logo = user.displayName[0];
+  if (user?.displayName) {
+    logo = user?.displayName[0];
   }
 
   return (
@@ -33,8 +33,8 @@ const Sidebar = () => {
             </div>
           )}
         </div>
-        <h6 className="mt-2">{user?.displayName}</h6>
-        <small>{user?.email}</small>
+        <h6 className="mt-2 p-0">{user?.displayName}</h6>
+        <small >{user?.email}</small>
         <hr />
       </div>
       {/* Link */}

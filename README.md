@@ -1,8 +1,5 @@
 # Cyclist
 A bicycle related niche website.
-## Link
-[Server Github](https://choosealicense.com/licenses/mit/)
-[LiveSite](https://bicycle-12.web.app/).
 
 ## Site Summary
 
@@ -30,4 +27,7 @@ A bicycle related niche website.
 ### Authentication
 * Firebase
 
+## Link
+[Server](https://choosealicense.com/licenses/mit/)
+[LiveSite](https://bicycle-12.web.app/).
 

@@ -8,7 +8,7 @@ const AddProduct = () => {
   const handleSubmit = (e) => {
     // console.log(product)
     e.preventDefault()
-    fetch('http://localhost:4000/addProduct',{
+    fetch('https://pacific-ridge-36287.herokuapp.com/addProduct',{
         method: 'POST',
         headers: {
             'content-type' : 'application/json',

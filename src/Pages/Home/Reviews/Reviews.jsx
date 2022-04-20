@@ -5,7 +5,7 @@ import ReviewCard from "./ReviewCard";
 const Reviews = () => {
   const [reviwes, setreviwes] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/review")
+    fetch("https://pacific-ridge-36287.herokuapp.com/review")
       .then((res) => res.json())
       .then((data) => setreviwes(data));
   }, []);

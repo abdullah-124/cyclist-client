@@ -83,7 +83,7 @@ const useFirebase = () => {
   const saveUser = (email, displayName, method, password) => {
     const user = { email, displayName, password };
     console.log(user);
-    fetch("http://localhost:4000/users", {
+    fetch("https://pacific-ridge-36287.herokuapp.com/users", {
       method: method,
       headers: {
         "content-type": "application/json",
@@ -93,7 +93,7 @@ const useFirebase = () => {
   };
   // admin cheack 
   useEffect(()=>{
-    fetch(`http://localhost:4000/admin/${user.email}`)
+    fetch(`https://pacific-ridge-36287.herokuapp.com/admin/${user.email}`)
     .then(res => res.json())
     .then(data => {
       console.log(data)

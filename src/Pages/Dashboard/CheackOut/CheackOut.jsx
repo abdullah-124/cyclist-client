@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
+import Loader from "../../Shared/Loader/Loader"
 
 const CheackOut = () => {
   const { user } = useAuth();
@@ -11,7 +12,7 @@ const CheackOut = () => {
   useEffect(() => {
     const loadeData = (email) => {
       if (user.email === email) {
-        fetch(`http://localhost:4000/myOrder/${email}`)
+        fetch(`https://pacific-ridge-36287.herokuapp.com/myOrder/${email}`)
           .then((res) => res.json())
           .then((data) => setMyOrders(data));
       } else {
@@ -25,7 +26,7 @@ const CheackOut = () => {
     //   console.log(order)
     totalPrice += parseInt(order.price);
   }
-  return (
+  return myOrders.length === 0 ? <Loader /> : (
     <>
       <div className="pt-3 mx-auto">
         <Link className="btn-main" to={-1}>

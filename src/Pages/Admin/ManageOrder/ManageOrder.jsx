@@ -8,7 +8,7 @@ import ManageTable from "./ManageTable"
 const ManageOrder = () => {
   const [products, setProducts] = useState([]); 
   useEffect(() => {
-    fetch("http://localhost:4000/manageOrder")
+    fetch("https://pacific-ridge-36287.herokuapp.com/manageOrder")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

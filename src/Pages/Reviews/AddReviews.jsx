@@ -17,7 +17,7 @@ const AddReview = () => {
     review.text = text.current.value;
     review.user = user.displayName;
     // console.log(review)
-    fetch('http://localhost:4000/review', {
+    fetch('https://pacific-ridge-36287.herokuapp.com/review', {
       method: 'post', 
       headers: {
         'content-type': 'application/json'

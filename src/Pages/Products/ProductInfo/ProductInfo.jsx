@@ -16,7 +16,7 @@ const ProductInfo = () => {
   // console.log(id)
   //load data
   useEffect(() => {
-    fetch(`http://localhost:4000/products/${id}`)
+    fetch(`https://pacific-ridge-36287.herokuapp.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [id]);
@@ -30,7 +30,7 @@ const ProductInfo = () => {
 
     // console.log(order)
     if (user.email) {
-      fetch("http://localhost:4000/addToCart", {
+      fetch("https://pacific-ridge-36287.herokuapp.com/addToCart", {
         method: "post",
         headers: {
           "content-type": "application/json",

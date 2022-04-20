@@ -1,13 +1,13 @@
 .dashboard-container{
-    background: url('./Sidebar/6068326.jpg');
+    background: url('./5026563.jpg');
     height: 90vh;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     backdrop-filter: blur(10px)
 }
 .dashboard{
     /* background-color: rgba(210, 217, 238, 0.568); */
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
 }
 
 /* sidebar css */
@@ -33,9 +33,8 @@
     text-transform: uppercase;
     padding: 10px 30px;
     border-radius: 50%;
-    background-color: #08f7ff5d;
-    backdrop-filter: blur(5px);
-    color: #000;
+    background-color: #dd5e89;
+    color: #fff;
 }
 .link a{
     color: #333;

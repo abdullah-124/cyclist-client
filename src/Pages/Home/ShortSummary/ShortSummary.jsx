@@ -24,7 +24,7 @@ const card = [
 const ShortSummary = () => {
     return (
         <div className='container short-summary mx-auto my-5'>
-            <h3 className='text-center my-5 fw-bold'>We <span className="text-primary">Provide</span></h3>
+            {/* <h3 className='text-center my-5 fw-bold'>We <span className="text-primary">Provide</span></h3> */}
             <div className="row row-cols-1 row-cols-lg-3 row-cols-md-2">
                 <div className="col mx-auto">
                     <div  className="p-5 card shadow-lg text-center">

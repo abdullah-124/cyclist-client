@@ -7,14 +7,14 @@ import Loader from "../../Shared/Loader/Loader";
 const ManageProduct = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/products")
+    fetch("https://pacific-ridge-36287.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
   //   product delete
   const handleDelete = (id) => {
     console.log(id);
-    const url = `http://localhost:4000/deleteProduct/${id}`;
+    const url = `https://pacific-ridge-36287.herokuapp.com/deleteProduct/${id}`;
     const proceed = window.confirm("Are you sure you want to Delate ");
     if (proceed) {
       console.log("okey");

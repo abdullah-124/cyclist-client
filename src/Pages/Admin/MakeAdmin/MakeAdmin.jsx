@@ -9,7 +9,7 @@ const MakeAdmin = () => {
   const makeAdmin = (e) => {
     console.log(name.current.value)
     setEmail(name.current.value);
-    fetch(`http://localhost:4000/makeAdmin/${user.email}/${email}`, {
+    fetch(`https://pacific-ridge-36287.herokuapp.com/makeAdmin/${user.email}/${email}`, {
       method: "PUT",
     })
     .then(res => console.log(res))
