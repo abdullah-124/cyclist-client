@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../register.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../SocialLogin/SocialLogin"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {  faRightLeft } from "@fortawesome/free-solid-svg-icons"
@@ -10,11 +10,12 @@ import useAuth from "../../../Hooks/useAuth"
 const Register = () => {
   const [registerData, setRegisterData] = useState({})
   const { registerUser, massage, user} = useAuth()
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const location = useLocation()
   
   //navigate the user 
   if(user){
-    navigate(-1)
+    navigate(location?.state?.from || '/')
   }
   ///data submiting
   const handleSubmit = (e) =>{

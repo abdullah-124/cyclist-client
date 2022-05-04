@@ -6,7 +6,7 @@ const PrivateRoute = () => {
     const {user} = useAuth()
     const location = useLocation()
     return user ? <Outlet/> : (
-        <Navigate to='/login' replace state={{form: location}} />
+        <Navigate to='/login'  state={{from: location}} />
     );
 };
 

@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => {
       <div className="row product-card p-2">
         <div className="col-lg-5 col-12">
           {discount && <span>{discount}% off</span>}
-          <img className="img-fluid" src={image} alt="" />
+          <img className="img-fluid w-100" src={image} alt="" />
         </div>
         <article className="col-lg-7 col-12">
           <h4 className="fw-bold">{name}</h4>

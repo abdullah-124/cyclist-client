@@ -15,7 +15,7 @@ const Products = ({slice}) => {
     return products.length === 0 ? <Loader /> : (
         <>
         <div className='mt-3 '>
-            <div className='text-center mb-4'>
+            <div className='text-center mb-5'>
                 <h2 className='m-0 text-primary'>Product</h2>
                 <p className='m-0 text-muted'>We Sold</p>
             </div>

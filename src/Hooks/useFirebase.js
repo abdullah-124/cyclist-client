@@ -76,13 +76,14 @@ const useFirebase = () => {
       signOut(auth)
         .then(() => {
           setUser(false);
+          setMassage('Log out')
         })
         .catch((err) => setMassage(err.code));
     }
   };
   const saveUser = (email, displayName, method, password) => {
     const user = { email, displayName, password };
-    console.log(user);
+    // console.log(user);
     fetch("https://pacific-ridge-36287.herokuapp.com/users", {
       method: method,
       headers: {
@@ -96,7 +97,7 @@ const useFirebase = () => {
     fetch(`https://pacific-ridge-36287.herokuapp.com/admin/${user.email}`)
     .then(res => res.json())
     .then(data => {
-      console.log(data)
+      // console.log(data)
       setAdmin(data)
     })
   }, [user.email])
